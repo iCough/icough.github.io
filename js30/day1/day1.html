@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 1</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background-image: url("https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1362&q=80");
+        }
+
+        .wrapper {
+            height: 100%;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1em;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .button {
+            border: 0.5px solid black;
+            border-radius: 20px;
+            padding: 5px 15px;
+            opacity: 0.5;
+            transition: all .07s;
+        }
+
+        .playing {
+            border: 0.5px solid black;
+            border-radius: 20px;
+            padding: 5px 15px;
+            border-color: ffc600;
+            font-size: 1.2em;
+            -webkit-box-shadow: 0px 19px 12px -9px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 19px 12px -9px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 19px 12px -9px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+</head>
+
+<!-- • a handful of buttons that play different kind of music on keypress
+     • A background that changes according to the music 
+-->
+
+<body>
+    <div class="wrapper">
+        <div data-key="80" class="button">(P) iano</div>
+        <div data-key="71" class="button">(G) uitar</div>
+        <div data-key="66" class="button">(B) eats</div>
+        <!-- <div data-key="81"               >  </div> -->
+    </div>
+
+    <audio data-key="80" src="music/piano.mp3"></audio>
+    <audio data-key="71" src="music/acoustic.mp3"></audio>
+    <audio data-key="66" src="music/lofi.mp3"></audio>
+
+    <script src="day1.js"></script>
+</body>
+
+</html>

@@ -47,6 +47,22 @@
             -moz-box-shadow: 0px 19px 12px -9px rgba(0, 0, 0, 0.75);
             box-shadow: 0px 19px 12px -9px rgba(0, 0, 0, 0.75);
         }
+
+        .introWrapper {
+            text-align: center;
+        }
+
+        .intro {
+            background-color: white;
+            width: 120px;
+            margin: 50px 0 0 40%;
+            padding: 5px 0;
+            border-radius: 20px;
+            opacity: 0.3;
+            z-index: 99;
+            position: absolute;
+        }
+
     </style>
 </head>
 
@@ -55,7 +71,15 @@
 -->
 
 <body>
-    <div class="bg"></div>
+    <div class="introWrapper">
+        <div class="intro">
+            <p>press...</p>
+            <p>p --> piano</p>
+            <p>g --> guitar</p>
+            <p>b --> beats</p>
+            <p>q --> to stop</p>
+        </div>
+    </div>
     <div class="wrapper">
         <div data-key="80" class="button">(P) iano</div>
         <div data-key="71" class="button">(G) uitar</div>

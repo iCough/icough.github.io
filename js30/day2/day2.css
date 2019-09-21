@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    background-image: url(https://images.unsplash.com/photo-1530569673472-307dc017a82d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+    background-size: cover;
+    background-color: #2962FF;
+}
+
+.clock {
+    /* position: relative; */
+    /* display: flex;
+    justify-content: flex-start; */
+    /* Update this */
+}
+
+.clock-face {
+    position: absolute;
+    background: blue;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* top: 20px;
+    left: 20%;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    background: transparent;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), inset 2px 2px 4px rgba(0, 0, 0, .5); */
+}
+
+.hand {}
+
+.hour-hand {}
+
+.minute-hand {}
+
+.second-hand {}
